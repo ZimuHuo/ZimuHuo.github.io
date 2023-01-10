@@ -3,7 +3,7 @@ https://github.com/ZimuHuo/pymri_recon
 
 ## Coil 
 
-### [adaptive combine](https://github.com/ZimuHuo/pymri_recon)
+[### adaptive combine](https://github.com/ZimuHuo/pymri_recon)
 
 <img src="docs/adaptive_combine.png" width="50%">
 
