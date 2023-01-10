@@ -1,5 +1,4 @@
-# MRI reconstruction tools
-https://github.com/ZimuHuo/pymri_recon
+# [MRI reconstruction tools](https://github.com/ZimuHuo/pymri_recon)
 
 ## Coil 
 
@@ -15,10 +14,46 @@ https://github.com/ZimuHuo/pymri_recon
 ### [Sparse](https://github.com/ZimuHuo/pymri_recon/tree/main/compress_sensing) 
 <img src="docs/SPARSE.png" width="80%">
 
-## EPI
+## EPI ghost correction
 
-### [EPI navigator phase correction](https://github.com/ZimuHuo/pymri_recon/blob/main/EPI/avg_coil.ipynb)
-<img src="docs/EPI_avg_coil.png.png" width="80%">
+### [EPI navigator phase correction average coil](https://github.com/ZimuHuo/pymri_recon/blob/main/EPI/avg_coil.ipynb)
+<img src="docs/EPI_avg_coil.png" width="80%">
+
+### [EPI navigator phase correction per coil](https://github.com/ZimuHuo/pymri_recon/blob/main/EPI/per_coil.ipynb)
+<img src="docs/EPI_per_coil.png" width="80%">
+
+### [EPI entropy](https://github.com/ZimuHuo/pymri_recon/blob/main/EPI/entropy.ipynb)
+<img src="docs/EPI_entropy.png" width="80%">
+
+
+### [EPI low rank](https://github.com/ZimuHuo/pymri_recon/blob/main/EPI/low%20rank.ipynb)
+<img src="docs/EPI_lowrank.png" width="80%">
+
+### [EPI PAGE](https://github.com/ZimuHuo/pymri_recon/blob/main/EPI/page.ipynb)
+<img src="docs/EPI_page.png" width="80%">
+
+### [EPI PEC-SENSE](https://github.com/ZimuHuo/pymri_recon/blob/main/EPI/EPI_pecsense.png)
+<img src="docs/EPI_pecsense.png" width="80%">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # MRI pulse sequence simualator 
 
