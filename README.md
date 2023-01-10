@@ -5,15 +5,20 @@ https://github.com/ZimuHuo/pymri_recon
 
 ### [adaptive combine](https://github.com/ZimuHuo/pymri_recon/blob/main/coil/adaptive_combine.ipynb)
 
-<img src="docs/adaptive_combine.png" width="50%">
+<img src="docs/adaptive_combine.png" width="80%">
 
 ### [coil maps](https://github.com/ZimuHuo/pymri_recon/blob/main/coil/inati.ipynb)
-<img src="docs/inati_coil_maps.png" width="50%">
+<img src="docs/inati_coil_maps.png" width="80%">
 
 ## Compressed sensing 
 
 ### [Sparse](https://github.com/ZimuHuo/pymri_recon/tree/main/compress_sensing) 
-<img src="docs/inati_coil_maps.png" width="50%">
+<img src="docs/SPARSE.png" width="80%">
+
+## EPI
+
+### [EPI navigator phase correction](https://github.com/ZimuHuo/pymri_recon/blob/main/EPI/avg_coil.ipynb)
+<img src="docs/EPI_avg_coil.png.png" width="80%">
 
 # MRI pulse sequence simualator 
 
