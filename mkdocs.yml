@@ -11,3 +11,4 @@ theme:
   highlightjs: true
   hljs_languages:
     - yaml
+markdown: GFM
