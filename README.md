@@ -1,3 +1,4 @@
 # testy
 
-Read the post on https://dev.to/ar2pi/publish-your-markdown-docs-on-github-pages-6pe
+Read the post on 
+![Free precession](https://github.com/ZimuHuo/ZimuHuo.github.io/blob/main/docs/free_precession.gif)
