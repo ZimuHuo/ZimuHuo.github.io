@@ -1,0 +1,6 @@
+# this file is generated when running `git submodule add -b main GH_PAGE_REPO`
+# you don't need to create it manually
+[submodule "ZimuHuo.github.io"]
+	path = ZimuHuo.github.io
+	url = git@github.com:ZimuHuo/ZimuHuo.github.io.git
+	branch = main

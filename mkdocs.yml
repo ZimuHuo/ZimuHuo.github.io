@@ -1,0 +1,13 @@
+site_name: My Docs
+site_url: https://ZimuHuo.github.io
+site_author: Zimu Huo
+site_description: MRI
+
+nav:
+  - About: index.md
+
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
