@@ -2,7 +2,8 @@
 
 ## Coil 
 
-### adaptive combine
+[[link](https://github.com/ZimuHuo/pymri_recon/blob/main/coil/adaptive_combine.ipynb)](### Adaptive combine )
+
 <img src="docs/adaptive_combine.png" width="100%">
 
 ### coil maps
@@ -12,7 +13,7 @@
 
 
 
-
+https://github.com/ZimuHuo/pymri_recon/blob/main/coil/adaptive_combine.ipynb
 
 
 
