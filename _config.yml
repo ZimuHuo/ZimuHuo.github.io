@@ -6,9 +6,11 @@ site_description: MRI
 nav:
   - About: index.md
 
-theme:
-  name: readthedocs
-  highlightjs: true
-  hljs_languages:
-    - yaml
+# theme:
+#   name: readthedocs
+#   highlightjs: true
+#   hljs_languages:
+#     - yaml
+
+
 markdown: GFM
