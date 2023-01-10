@@ -2,7 +2,7 @@
 
 ## Coil 
 
-<a href="#adaptive combine">[Link to Header](https://github.com/ZimuHuo/pymri_recon/blob/main/coil/adaptive_combine.ipynb)</a>
+<a href="#adaptive combine">(https://github.com/ZimuHuo/pymri_recon/blob/main/coil/adaptive_combine.ipynb)</a>
 
 <img src="docs/adaptive_combine.png" width="50%">
 
