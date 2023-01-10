@@ -3,19 +3,12 @@ https://github.com/ZimuHuo/pymri_recon
 
 ## Coil 
 
-### adaptive combine
+### [adaptive combine](https://github.com/ZimuHuo/pymri_recon)
 
 <img src="docs/adaptive_combine.png" width="50%">
 
 ### coil maps
 <img src="docs/inati_coil_maps.png" width="50%">
-
-
-
-
-
-https://github.com/ZimuHuo/pymri_recon/blob/main/coil/adaptive_combine.ipynb
-
 
 
 # MRI pulse sequence simualator 
