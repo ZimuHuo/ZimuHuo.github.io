@@ -1,8 +1,9 @@
 # MRI reconstruction tools
+https://github.com/ZimuHuo/pymri_recon
 
 ## Coil 
 
-<a href="#adaptive combine">https://github.com/ZimuHuo/pymri_recon/blob/main/coil/adaptive_combine.ipynb</a>
+### adaptive combine
 
 <img src="docs/adaptive_combine.png" width="50%">
 
