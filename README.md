@@ -1,4 +1,4 @@
-# MRI pulse sequence simualator 
+# MRI pulse sequence simulator 
 
 alomost there upload code soon
 
