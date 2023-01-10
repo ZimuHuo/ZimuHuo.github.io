@@ -3,13 +3,17 @@ https://github.com/ZimuHuo/pymri_recon
 
 ## Coil 
 
-### [adaptive combine](https://github.com/ZimuHuo/pymri_recon)
+### [adaptive combine](https://github.com/ZimuHuo/pymri_recon/blob/main/coil/adaptive_combine.ipynb)
 
 <img src="docs/adaptive_combine.png" width="50%">
 
-### coil maps
+### [coil maps](https://github.com/ZimuHuo/pymri_recon/blob/main/coil/inati.ipynb)
 <img src="docs/inati_coil_maps.png" width="50%">
 
+## Compressed sensing 
+
+### [Sparse](https://github.com/ZimuHuo/pymri_recon/tree/main/compress_sensing) 
+<img src="docs/inati_coil_maps.png" width="50%">
 
 # MRI pulse sequence simualator 
 
