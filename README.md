@@ -3,10 +3,10 @@
 ## Coil 
 
 ### adaptive combine
-<img src="docs/adaptive_combine.png" width="50%">
+<img src="docs/adaptive_combine.png" width="100%">
 
 ### coil maps
-<img src="docs/inati_coil_maps.png" width="50%">
+<img src="docs/inati_coil_maps.png" width="100%">
 
 
 
