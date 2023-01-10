@@ -1,3 +1,20 @@
+# MRI reconstruction tools
+
+## Coil 
+
+### adaptive combine
+<img src="docs/adaptive_combine.png" width="30%">
+
+### coil maps
+<img src="docs/inati_coil_maps.png" width="30%">
+
+
+
+
+
+
+
+
 
 # MRI pulse sequence simualator 
 
