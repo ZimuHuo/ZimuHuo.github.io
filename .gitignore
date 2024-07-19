@@ -1,12 +1,12 @@
 # Ignore the contents of the _site directory
-_site/
+#_site/
 
 # Ignore the directory for local files during development
-local/
+#local/
 
 # Ignore the Gemfile that is generated
-Gemfile.lock
+#Gemfile.lock
 
 # Ingore files created by npm
-node_modules
-package-lock.json
+#node_modules
+#package-lock.json
