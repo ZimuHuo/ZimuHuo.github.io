@@ -19,7 +19,7 @@
 
 
 
-<title>GRAPPA reconstruction tutorial - Zimu Huo / Personal Site</title>
+<title>Simulatenous Mulit-slice reconstruction tutorial 3 - Zimu Huo / Personal Site</title>
 
 
 
@@ -29,15 +29,15 @@
 
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="Zimu Huo / Personal Site">
-<meta property="og:title" content="GRAPPA reconstruction tutorial">
+<meta property="og:title" content="Simulatenous Mulit-slice reconstruction tutorial 3">
 
 
-  <link rel="canonical" href="http://localhost:4000/posts/blog-post-1/">
-  <meta property="og:url" content="http://localhost:4000/posts/blog-post-1/">
+  <link rel="canonical" href="http://localhost:4000/posts/blog-post-12/">
+  <meta property="og:url" content="http://localhost:4000/posts/blog-post-12/">
 
 
 
-  <meta property="og:description" content="GRAPPA is a widely used parallel imaging technique designed for accelerating data acquisition in MRI. It takes advantage of two key facts: first, MRI data is collected from multiple receivers, and second, k-space can be linearly interpolated due to its shift invariance properties.View the GRAPPA reconstruction tutorial here">
+  <meta property="og:description" content="What if we combine SMS and inplane undersampling ?In this case, the sms data is acquired with slice fatctor of ns, and in plane factor of R (total = ns * R). To unfold the aliasing, one could arrange the data reconstruction as two separate steps.  1. the slice grappa is used to separate the slice 2. the conventional grappa is then used along with reference data to unfold each individual slice.View the slice GRAPPA with inplane acceleration tutorial here">
 
 
 
@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2022-08-14T00:00:00-07:00">
+  <meta property="article:published_time" content="2022-10-01T00:00:00-07:00">
 
 
 
@@ -267,15 +267,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="GRAPPA reconstruction tutorial">
-    <meta itemprop="description" content="GRAPPA is a widely used parallel imaging technique designed for accelerating data acquisition in MRI. It takes advantage of two key facts: first, MRI data is collected from multiple receivers, and second, k-space can be linearly interpolated due to its shift invariance properties.View the GRAPPA reconstruction tutorial here">
-    <meta itemprop="datePublished" content="August 14, 2022">
+    <meta itemprop="headline" content="Simulatenous Mulit-slice reconstruction tutorial 3">
+    <meta itemprop="description" content="What if we combine SMS and inplane undersampling ?In this case, the sms data is acquired with slice fatctor of ns, and in plane factor of R (total = ns * R). To unfold the aliasing, one could arrange the data reconstruction as two separate steps.  1. the slice grappa is used to separate the slice 2. the conventional grappa is then used along with reference data to unfold each individual slice.View the slice GRAPPA with inplane acceleration tutorial here">
+    <meta itemprop="datePublished" content="October 01, 2022">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">GRAPPA reconstruction tutorial
+          <h1 class="page__title" itemprop="headline">Simulatenous Mulit-slice reconstruction tutorial 3
 </h1>
           
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -289,16 +289,20 @@
         
         
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-08-14T00:00:00-07:00">August 14, 2022</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-10-01T00:00:00-07:00">October 01, 2022</time></p>
             
         </header>
       
 
       <section class="page__content" itemprop="text">
-        <p>GRAPPA is a widely used parallel imaging technique designed for accelerating data acquisition in MRI. It takes advantage of two key facts: first, MRI data is collected from multiple receivers, and second, k-space can be linearly interpolated due to its shift invariance properties.</p>
+        <p>What if we combine SMS and inplane undersampling ?</p>
 
-<p><a href="../notebooks/GRAPPA_demo.html">View the GRAPPA reconstruction tutorial here</a></p>
+<p>In this case, the sms data is acquired with slice fatctor of ns, and in plane factor of R (total = ns * R). To unfold the aliasing, one could arrange the data reconstruction as two separate steps. 
+<br />
+<br /> 1. the slice grappa is used to separate the slice
+<br /> 2. the conventional grappa is then used along with reference data to unfold each individual slice.</p>
 
+<p><a href="../notebooks/slicegrappaWithInplane.html">View the slice GRAPPA with inplane acceleration tutorial here</a></p>
 
 
         
@@ -330,11 +334,11 @@
     
       
       
-      <a href="http://localhost:4000/tags/#parallel-imaging" class="page__taxonomy-item" rel="tag">Parallel Imaging</a><span class="sep">, </span>
+      <a href="http://localhost:4000/tags/#reconstruction" class="page__taxonomy-item" rel="tag">Reconstruction</a><span class="sep">, </span>
     
       
       
-      <a href="http://localhost:4000/tags/#reconstruction" class="page__taxonomy-item" rel="tag">Reconstruction</a>
+      <a href="http://localhost:4000/tags/#sms" class="page__taxonomy-item" rel="tag">SMS</a>
     
     </span>
   </p>
@@ -351,11 +355,11 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/posts/blog-post-1/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/posts/blog-post-12/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/posts/blog-post-1/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/posts/blog-post-12/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/posts/blog-post-1/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/posts/blog-post-12/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -363,10 +367,11 @@
 
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">Previous</a>
+      <a href="http://localhost:4000/posts/blog-post-11/" class="pagination--pager" title="Simulatenous Mulit-slice reconstruction tutorial 2
+">Previous</a>
     
     
-      <a href="http://localhost:4000/posts/blog-post-2/" class="pagination--pager" title="SENSE reconstruction tutorial
+      <a href="http://localhost:4000/posts/blog-post-13/" class="pagination--pager" title="Simulatenous Mulit-slice reconstruction tutorial 4
 ">Next</a>
     
   </nav>
@@ -419,55 +424,6 @@
     <p class="archive__item-excerpt" itemprop="description"><p>The slice grappa tries to reduce the total artefact without placing constraints on the intraslice and interslice artifacts. So the artefacts can be arbitrarily large(like vectors pointing in opposite directions can cancel out each other, also called artefact cancellation). The split slice trades interslice artefact with intraslice artefact (lower interslice artefact and higher intraslice artefact) by forming a “correlation matrix” that contrains the interslice leakage to be minimum.</p>
 
 <p><a href="../notebooks/spsliceGrappa.html">View the split slice slice GRAPPA tutorial here</a></p>
-</p>
-    
-    
-    
-
-  </article>
-</div>
-
-        
-          
-
-
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="http://localhost:4000/posts/blog-post-12/" rel="permalink">Simulatenous Mulit-slice reconstruction tutorial 3
-</a>
-      
-    </h2>
-    
-    
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
-
-
-  
-	  less than 1 minute read
-	
-</p>
-    
-
-        
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-10-01T00:00:00-07:00">October 01, 2022</time></p>
-        
-
-    
-    <p class="archive__item-excerpt" itemprop="description"><p>What if we combine SMS and inplane undersampling ?</p>
-
-<p>In this case, the sms data is acquired with slice fatctor of ns, and in plane factor of R (total = ns * R). To unfold the aliasing, one could arrange the data reconstruction as two separate steps. 
-<br />
-<br /> 1. the slice grappa is used to separate the slice
-<br /> 2. the conventional grappa is then used along with reference data to unfold each individual slice.</p>
-
-<p><a href="../notebooks/slicegrappaWithInplane.html">View the slice GRAPPA with inplane acceleration tutorial here</a></p>
 </p>
     
     
@@ -558,6 +514,50 @@
 <p>In this simulation of the SMS experiment, we concatenate multiple slices into an extended field of view. Techniques like SENSE and GRAPPA treat this extended field as a single image, applying the reconstruction in their original, unmodified form. However, GRAPPA techniques encounter difficulties in this scenario due to the CAIPI shift causing a phase discontinuity between the images. This sharp change cannot be captured by a small GRAPPA kernel. Since the GRAPPA kernel is small and bandlimited, its image domain representation is smooth and slowly varying, making it inadequate for capturing the sharp phase change.</p>
 
 <p><a href="../notebooks/SenseGrappa.html">View the SENSE/GRAPPA tutorial here</a></p>
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/posts/blog-post-9/" rel="permalink">EPI distortion correction tutorial 3
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  less than 1 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-09-27T00:00:00-07:00">September 27, 2022</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p>Basic information about EPI has been shared in the previous post. Here, I share a reconstruction pipeline to correct the distortion using a third party package called FSL.</p>
+
+<p><a href="../notebooks/distortion_fsl.html">View the EPI distortion correction tutorial 3 here</a></p>
 </p>
     
     

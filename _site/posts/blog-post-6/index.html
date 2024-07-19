@@ -398,7 +398,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/posts/blog-post-9/" rel="permalink">EPI distortion correction tutorial 3
+        <a href="http://localhost:4000/posts/blog-post-13/" rel="permalink">Simulatenous Mulit-slice reconstruction tutorial 4
 </a>
       
     </h2>
@@ -414,13 +414,13 @@
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-09-27T00:00:00-07:00">September 27, 2022</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2023-04-02T00:00:00-07:00">April 02, 2023</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>Basic information about EPI has been shared in the previous post. Here, I share a reconstruction pipeline to correct the distortion using a third party package called FSL.</p>
+    <p class="archive__item-excerpt" itemprop="description"><p>The slice grappa tries to reduce the total artefact without placing constraints on the intraslice and interslice artifacts. So the artefacts can be arbitrarily large(like vectors pointing in opposite directions can cancel out each other, also called artefact cancellation). The split slice trades interslice artefact with intraslice artefact (lower interslice artefact and higher intraslice artefact) by forming a “correlation matrix” that contrains the interslice leakage to be minimum.</p>
 
-<p><a href="../notebooks/distortion_fsl.html">View the EPI distortion correction tutorial 3 here</a></p>
+<p><a href="../notebooks/spsliceGrappa.html">View the split slice slice GRAPPA tutorial here</a></p>
 </p>
     
     
@@ -442,7 +442,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/posts/blog-post-8/" rel="permalink">EPI distortion correction tutorial 2
+        <a href="http://localhost:4000/posts/blog-post-12/" rel="permalink">Simulatenous Mulit-slice reconstruction tutorial 3
 </a>
       
     </h2>
@@ -458,13 +458,18 @@
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-09-26T00:00:00-07:00">September 26, 2022</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-10-01T00:00:00-07:00">October 01, 2022</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>Basic information about EPI has been shared in the previous post. Here, I share another straightforward method for correcting EPI field distortions, utilizing nonrigid image registration.</p>
+    <p class="archive__item-excerpt" itemprop="description"><p>What if we combine SMS and inplane undersampling ?</p>
 
-<p><a href="../notebooks/distortion_registration.html">View the SENSE based EPI correction tutorial here</a></p>
+<p>In this case, the sms data is acquired with slice fatctor of ns, and in plane factor of R (total = ns * R). To unfold the aliasing, one could arrange the data reconstruction as two separate steps. 
+<br />
+<br /> 1. the slice grappa is used to separate the slice
+<br /> 2. the conventional grappa is then used along with reference data to unfold each individual slice.</p>
+
+<p><a href="../notebooks/slicegrappaWithInplane.html">View the slice GRAPPA with inplane acceleration tutorial here</a></p>
 </p>
     
     
@@ -486,7 +491,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/posts/blog-post-7/" rel="permalink">EPI distortion correction tutorial 1
+        <a href="http://localhost:4000/posts/blog-post-11/" rel="permalink">Simulatenous Mulit-slice reconstruction tutorial 2
 </a>
       
     </h2>
@@ -502,13 +507,13 @@
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-09-25T00:00:00-07:00">September 25, 2022</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-09-29T00:00:00-07:00">September 29, 2022</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>Echo-planar imaging (EPI) offers rapid imaging capabilities by capturing an entire k-space data set in a single acquisition. However, this technique is prone to geometric distortions, which significantly degrade image quality. These distortions are primarily caused by field inhomogeneities, leading to voxel shifts. The voxel shifts are especially pronounced in the phase-encode direction. In this context, we explore the blip up and blip down approaches. I present a straightforward correction method based on line integrals to address these issues.</p>
+    <p class="archive__item-excerpt" itemprop="description"><p>Slice GRAPPA is used exclusively for SMS, ensuring that the output dimensions match the input dimensions. The kernel is trained for each slice, allowing it to project the SMS data onto each individual slice. Similarly, the slice GRAPPA kernel is obtained through a least squares fit.</p>
 
-<p><a href="../notebooks/distortion_line_integral.html">View the EPI distortion correction tutorial 1 here</a></p>
+<p><a href="../notebooks/sliceGrappa.html">View the slice GRAPPA tutorial here</a></p>
 </p>
     
     
@@ -530,7 +535,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/posts/blog-post-5/" rel="permalink">EPI referenceless phase correction tutorial
+        <a href="http://localhost:4000/posts/blog-post-10/" rel="permalink">Simulatenous Mulit-slice reconstruction tutorial 1
 </a>
       
     </h2>
@@ -540,26 +545,21 @@
 
 
   
-	  less than 1 minute read
+	  1 minute read
 	
 </p>
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-09-15T00:00:00-07:00">September 15, 2022</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-09-28T00:00:00-07:00">September 28, 2022</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>Due to the alternating direction of the EPI readout lines, hardware imperfections such as timing delays, eddy currents, and gradient coil heating can cause misalignment of the forward and reverse lines in k-space. This misalignment manifests itself in the images as a Nyquist (N/2) ghost in the phase encode direction and sinusoidal modulation of the object in the frequency encode direction.</p>
+    <p class="archive__item-excerpt" itemprop="description"><p>Simultaneous Multislice (SMS) is a data acceleration technique that acquires multiple slices at the same time, rather than skipping lines within an acquisition. This method can be visualized as capturing all images within an extended field of view and then undersampling with a slice factor in a simulation. In practice, the signals from all slices are acquired together and superimposed linearly, causing multiple slices to overlap in the final image. The objective of the reconstruction process is to separate these slices with the highest possible quality.</p>
 
-<p>The entropy-based method attempts to minimize the image entropy of the magnitude image to minimize EPI misalignment artifacts</p>
+<p>In this simulation of the SMS experiment, we concatenate multiple slices into an extended field of view. Techniques like SENSE and GRAPPA treat this extended field as a single image, applying the reconstruction in their original, unmodified form. However, GRAPPA techniques encounter difficulties in this scenario due to the CAIPI shift causing a phase discontinuity between the images. This sharp change cannot be captured by a small GRAPPA kernel. Since the GRAPPA kernel is small and bandlimited, its image domain representation is smooth and slowly varying, making it inadequate for capturing the sharp phase change.</p>
 
-<p><a href="../notebooks/Entropy_method.html">View the Entropy based EPI correction tutorial here</a></p>
-
-<p>The low rank method attempts to promote self consistency in k-space to minimize EPI misalignment artifacts</p>
-
-<p><a href="../notebooks/LR_method.html">View the Low Rank based EPI correction tutorial here</a></p>
-
+<p><a href="../notebooks/SenseGrappa.html">View the SENSE/GRAPPA tutorial here</a></p>
 </p>
     
     
