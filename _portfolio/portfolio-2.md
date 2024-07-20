@@ -1,5 +1,5 @@
 ---
-title: "MRIO Simulation Toolbox"
+title: "MRI Simulation Toolbox"
 excerpt: "MRI Simulation Toolbox<br/><img src='/images/simulation_toolbox.gif'>"
 collection: portfolio
 ---
