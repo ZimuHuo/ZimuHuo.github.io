@@ -4,5 +4,5 @@ collection: publications
 permalink: /publication/2024-07-09-paper-title-number-7
 date: 2024-07-09
 venue: 'Journal of the Peripheral Nervous System'
-citation: McDowell, Amy; Zambreanu, Laura; A, Hamza Salhab; Doherty, Carolynne; Bridgen, Philippa; Lally, Pete; Shah, Sachit; Huo, Zimu; J, Stephen Wastling; Yousry, Tarek; Morrow, Jasper; S, John Thornton; Lunn, Michael
+citation: Amy McDowell, Laura Zambreanu, Hamza Salhab A, Carolynne Doherty, Philippa Bridgen, Pete Lally, Sachit Shah, Zimu Huo, Stephen Wastling J, Tarek Yousry, Jasper Morrow, John Thornton S, Michael Lunn
 ---
