@@ -11,35 +11,26 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* XXX, Radiology, University of Cambridge, 2023
+* MEng, Biomedical Engineering, Imperial College London, 2019-2023
 
-Work experience
+Research experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Research Assistant, Department of Bioengineering, Imperial College London (Oct 2022 – Oct 2023)
+  * I Implemented reconstruction toolbox for parallel imaging, low rank reconstruction, and compressed sensing.
+  * I built an automated segmentation pipeline using UNET based machine learning tools and quantitative analysis methods such as T2 and Apparent diffusion coefficient (ADC) mapping for musculoskeletal MRI and MRI neurography.
+  * Supervisor: Dr. Neal Bangerter and Dr. Peter lally 
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Research Intern, Royal Brompton Hospital, National Heart and Lung Institute (June 2022-- Oct 2022)
+  * I implemented reconstruction pipelines for echo planar imaging and simultaneous multi-slice imaging potentially allowing acquisition times to be shortened by a factor of 3.
+  * I was actively involved in a clinical research study and had experience operating a Siemens scanner. 
+  * Supervisor: Dr. Sonia Nielles-Vallespin and Dr. Andrew Scott
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming Languages: C/C++, Python, MATLAB, Java, SQL, JavaScript, HTML/CSS
+* Software and Developer Tools: MRI pulse sequence development (Siemens IDEA, GE EPIC), MRI reconstruction tool (Gadgetron, Bart), Siemens MATLAB Parallel Transmit Toolbox, FSL, ITK
+
 
 Publications
 ======
@@ -59,6 +50,10 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+Interest
 ======
-* Currently signed in to 43 different slack teams
+
+* Cambridge Rowing club Darwin College 23-24
+* Imperial Cross Country and Athletics 22-23
+* Black and White photography 19-present
+
