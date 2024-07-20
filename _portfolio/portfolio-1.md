@@ -1,7 +1,7 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "MRI Reconstruction Toolbox"
+excerpt: "MRI Reconstruction Toolbox<br/><img src='/images/toolbox.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+I began learning about MRI in mid-2022 as an undergraduate student. Over the past two years, alongside my studies, I taught myself more than 30 different reconstruction techniques. I believe the best way to ensure I understand something is by implementing it. To assist others, I have organized around 20 tutorials on basic reconstruction methods in my blog posts. Feel free to email me if you would like access to the full simulation toolbox.
