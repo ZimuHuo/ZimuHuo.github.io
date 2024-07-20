@@ -2,9 +2,9 @@
 title: "Signal Processing"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
+permalink: /teaching/2022-spring-teaching-1
 venue: "Imperial College London, Department of Bioengineering"
-date: 2014-01-01
+date: 2023-05-01
 location: "London, UK"
 ---
 
