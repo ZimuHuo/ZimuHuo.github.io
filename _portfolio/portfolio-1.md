@@ -1,6 +1,6 @@
 ---
 title: "MRI Reconstruction Toolbox"
-excerpt: "MRI Reconstruction Toolbox<br/><img src='/images/toolbox.png'>"
+excerpt: "MRI Reconstruction Toolbox<br/><img src='/images/recon_tool.png'>"
 collection: portfolio
 ---
 

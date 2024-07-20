@@ -1,10 +1,12 @@
 ---
 title: "MRI Simulation Toolbox"
-excerpt: "MRI Simulation Toolbox<br/><img src='/images/simulation_toolbox.gif'>"
+excerpt: "MRI Simulation Toolbox<br/><img src='/images/sim_tool.png'>"
 collection: portfolio
 ---
 
-Another simulation toolbox I wrote to demonstrate various aspects of signal evolution
+Another simulation toolbox I wrote to demonstrate various aspects of signal evolution. 
+
+Here are a few examples: 
 
 ## Sinc pulse
 
