@@ -4,7 +4,7 @@ excerpt: "MRI Simulation Toolbox<br/><img src='/images/sim_tool.png'>"
 collection: portfolio
 ---
 
-Another simulation toolbox I wrote to demonstrate various aspects of signal evolution. 
+Another simulation toolbox I wrote to demonstrate various aspects of signal evolution. Feel free to email me if you would like access to the full simulation toolbox.
 
 Here are a few examples: 
 
