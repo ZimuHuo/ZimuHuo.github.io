@@ -14,4 +14,6 @@ Here is an example:
 - [GRAPPA reconstruction tutorial](https://zimuhuo.github.io/posts/blog-post-1/)
 
 
+I also enjoy photography: [photos](https://www.instagram.com/zimu.huo/)
+
 
