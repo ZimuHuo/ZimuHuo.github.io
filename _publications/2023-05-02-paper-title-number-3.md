@@ -6,3 +6,5 @@ date: 2023-05-02
 venue: ' Abstract for International Society for Magnetic Resonance in Medicine 2023'
 citation: Jessica L. Asay, Krithika Balaji, Anthony A. Gatti, Arjun D. Desai, Michael Mendoza, Zimu Huo, Akshay S. Chaudhari, Feliks Kogan, Peter J. Lally, Neal K. Bangerter, Garry E. Gold
 ---
+
+[publication](https://cds.ismrm.org/protected/23MPresentations/abstracts/5100.html)  [source code](https://github.com/ad12/DOSMA/tree/master)
