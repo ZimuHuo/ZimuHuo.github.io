@@ -7,4 +7,4 @@ venue: 'Abstract for Osteoarthritis Imaging 2022'
 citation: Michael.A. Mendoza, Zimu Huo, Yongqi Diao, Jiaxin Huang, Neal K. Bangerter
 ---
 
-[Conference abstract](https://www.sciencedirect.com/science/article/pii/S2772654122000083)  [Source code](https://github.com/michaelmendoza/node-studio)
+[Conference Abstract](https://www.sciencedirect.com/science/article/pii/S2772654122000083)  [Source Code](https://github.com/michaelmendoza/node-studio)
