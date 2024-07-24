@@ -7,6 +7,4 @@ venue: ' Abstract for International Society for Magnetic Resonance in Medicine 2
 citation:  Zimu Huo, José de Arcos, Florian Wiesinger, Joshua D Kaggie, Martin J Graves
 ---
 
-[link to the conference abstract](https://submissions.mirasmart.com/ISMRM2024/Itinerary/PresentationDetail.aspx?evdid=5587)
-
-[link to the source code](https://github.com/ZimuHuo/LRII)
+[conference abstract](https://submissions.mirasmart.com/ISMRM2024/Itinerary/PresentationDetail.aspx?evdid=5587)  [source code](https://github.com/ZimuHuo/LRII)
