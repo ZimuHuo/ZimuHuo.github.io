@@ -9,4 +9,4 @@ citation:  Zimu Huo, José de Arcos, Florian Wiesinger, Joshua D Kaggie, Martin 
 
 [link to the conference abstract](https://submissions.mirasmart.com/ISMRM2024/Itinerary/PresentationDetail.aspx?evdid=5587)
 
-[link to the source code](https://www.bilibili.com/video/BV1sP4y197HU/?spm_id_from=pageDriver&vd_source=858a11e938de8a8a68746fbdd056cd83)
+[link to the source code](https://github.com/ZimuHuo/LRII)
