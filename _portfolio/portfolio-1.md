@@ -9,3 +9,5 @@ NodeStudio is an open-source node-based imaging processing web platform created 
 Here is a demo:
 
 <iframe src="https://drive.google.com/file/d/1_KPBHWeIJKArQ0QkV5V376SyWoEt89q5/preview" width="640" height="480"></iframe>
+
+[Access the github repo](https://github.com/michaelmendoza/node-studio)
