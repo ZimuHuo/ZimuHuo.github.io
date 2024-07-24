@@ -8,4 +8,4 @@ citation: Krithika Balaji, Pete Lally, Michael Hoff, Zimu Huo, Michael Mendoza, 
 ---
 
 
-[Conference abstract](https://submissions.mirasmart.com/ISMRM2023/Itinerary/PresentationDetail.aspx?evdid=6370)
+[Conference Abstract](https://submissions.mirasmart.com/ISMRM2023/Itinerary/PresentationDetail.aspx?evdid=6370)
