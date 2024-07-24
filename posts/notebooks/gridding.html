@@ -7659,7 +7659,7 @@ Link: https://ieeexplore.ieee.org/document/97598</code></pre>
 <span class="sd">'''</span>
 <span class="sd">Equation 19</span>
 <span class="sd">(W * phi) * R from  Jim Pipe et al. (1999)</span>
-<span class="sd">It simply means convolve weight with kernel on to R, which is a cartesian grid</span>
+<span class="sd">It simply means convolving the weight with the kernel onto R, which is a Cartesian grid.</span>
 <span class="sd">Complexity O(2pi L^2 N) </span>
 <span class="sd">'''</span>
     
@@ -7704,8 +7704,8 @@ Link: https://ieeexplore.ieee.org/document/97598</code></pre>
 <span class="sd">'''</span>
 <span class="sd">Equation 19</span>
 <span class="sd">(((W * phi) * R) *phi) * S = w from  Jim Pipe et al. (1999)</span>
-<span class="sd">It simply means convolve weight with kernel on to R, which is a cartesian grid</span>
-<span class="sd">then re-sample back to the weigth vector w using the kernel phi from trajectory S</span>
+<span class="sd">It simply means convolving the weight with the kernel onto R, which is a Cartesian grid.</span>
+<span class="sd">then re-sample back to the weight vector w using the kernel phi from trajectory S</span>
 <span class="sd">Complexity also O(2pi L^2 N) </span>
 <span class="sd">'''</span>
 <span class="k">def</span> <span class="nf">degrid</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span><span class="n">traj</span><span class="p">):</span>
