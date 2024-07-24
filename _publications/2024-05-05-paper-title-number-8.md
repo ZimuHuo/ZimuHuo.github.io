@@ -6,3 +6,5 @@ date: 2023-05-04
 venue: ' Abstract for International Society for Magnetic Resonance in Medicine 2023'
 citation:  Zimu Huo, Lorena Garcia-Foncillas, Krithika Balaji, Michael Mendoza, Neal K Bangerter, and Peter J Lally
 ---
+
+[conference abstract](https://submissions.mirasmart.com/ISMRM2024/Itinerary/PresentationDetail.aspx?evdid=7939)
