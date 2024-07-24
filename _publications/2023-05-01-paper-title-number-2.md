@@ -6,3 +6,6 @@ date: 2023-05-01
 venue: ' Abstract for International Society for Magnetic Resonance in Medicine 2023'
 citation: Krithika Balaji, Pete Lally, Michael Hoff, Zimu Huo, Michael Mendoza, Neal K Bangerter  
 ---
+
+
+[conference abstract](https://submissions.mirasmart.com/ISMRM2023/Itinerary/PresentationDetail.aspx?evdid=6370)
