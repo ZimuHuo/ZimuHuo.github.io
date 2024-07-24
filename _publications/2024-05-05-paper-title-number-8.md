@@ -7,4 +7,4 @@ venue: ' Abstract for International Society for Magnetic Resonance in Medicine 2
 citation:  Zimu Huo, Lorena Garcia-Foncillas, Krithika Balaji, Michael Mendoza, Neal K Bangerter, and Peter J Lally
 ---
 
-[conference abstract](https://submissions.mirasmart.com/ISMRM2024/Itinerary/PresentationDetail.aspx?evdid=7939)
+[Conference abstract](https://submissions.mirasmart.com/ISMRM2024/Itinerary/PresentationDetail.aspx?evdid=7939)
