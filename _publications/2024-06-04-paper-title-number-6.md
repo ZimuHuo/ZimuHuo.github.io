@@ -7,4 +7,4 @@ venue: ' Magnetic Resonance in Medicine '
 citation:  Zimu Huo, Ke Wen, Yaqing Luo, Pedro F Ferreira, Dudley Pennell, Andrew D Scott, Sonia Nielles-Vallespin
 ---
 
-[Conference Abstract](../files/epi_mrm2024.pdf) 
+[Full Paper](../files/epi_mrm2024.pdf) 
