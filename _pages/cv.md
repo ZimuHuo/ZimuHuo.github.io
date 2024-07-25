@@ -56,7 +56,7 @@ Awards
 
 * 2024 Gates Cambridge Scholarship, University of Cambridge (Competitive scholarship with around 1.3% of applicants receiving an award)
 * 2024 Guarantors of Brain, University of Cambridge (Funded conference attendance: £1000) 
-* 2024 Magna Cum Laude merit award, International Society for Magnetic Resonance in Medicine(Top 15% conference score)
+* 2024 Magna Cum Laude merit award, International Society for Magnetic Resonance in Medicine
 * 2023 Stephen Richardson Prize, Imperial College London (Best final year project among cohort of 50 students)
 * 2023 Dean’s List Year 4, Imperial College London (Top 10 percent of the cohort) 
 * 2023 Imperial College Trust Grant, Imperial College London (Funded conference attendance: £600) 
