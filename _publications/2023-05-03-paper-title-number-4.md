@@ -7,5 +7,4 @@ venue: ' Abstract for International Society for Magnetic Resonance in Medicine 2
 citation:  Zimu Huo, Ke Wen, Yaqing Luo, Pedro F Ferreira, Dudley Pennell, Andrew D Scott, Sonia Nielles-Vallespin
 ---
 
-
-[Conference Abstract](https://submissions.mirasmart.com/ISMRM2023/Itinerary/PresentationDetail.aspx?evdid=3905)
+[Conference Abstract](../files/epi_ismrm2023.html)
