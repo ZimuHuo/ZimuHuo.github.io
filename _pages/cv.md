@@ -66,7 +66,7 @@ Awards
 Interest
 ======
 
-* Cambridge Rowing club Darwin College 23-24
+* Cambridge Rowing Club Darwin College 23-24
 * Imperial Cross Country and Athletics 22-23
-* Black and White photography 19-present
+* Black and White Photography 19-present
 
