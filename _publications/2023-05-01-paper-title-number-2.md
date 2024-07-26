@@ -8,4 +8,4 @@ citation: Krithika Balaji, Pete Lally, Michael Hoff, Zimu Huo, Michael Mendoza, 
 ---
 
 
-[Conference Abstract](../files/bssfpcoil_ismrm2023.html) 
+[Conference Abstract](../files/bssfpcoil_ismrm2023.pdf)
