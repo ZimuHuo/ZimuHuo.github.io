@@ -7,4 +7,4 @@ venue: ' Abstract for International Society for Magnetic Resonance in Medicine 2
 citation:  Zimu Huo, Lorena Garcia-Foncillas, Krithika Balaji, Michael Mendoza, Neal K Bangerter, and Peter J Lally
 ---
 
-[Conference Abstract](../files/femr_ismrm2024.html)  [Source Code](https://github.com/ZimuHuo/femr_profile_encoding)
+[Conference Abstract](../files/femr_ismrm2024.pdf)  [Source Code](https://github.com/ZimuHuo/femr_profile_encoding)
