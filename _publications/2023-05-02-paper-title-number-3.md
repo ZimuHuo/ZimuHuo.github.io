@@ -7,4 +7,4 @@ venue: ' Abstract for International Society for Magnetic Resonance in Medicine 2
 citation: Jessica L. Asay, Krithika Balaji, Anthony A. Gatti, Arjun D. Desai, Michael Mendoza, Zimu Huo, Akshay S. Chaudhari, Feliks Kogan, Peter J. Lally, Neal K. Bangerter, Garry E. Gold
 ---
 
-[Conference Abstract](../files/7T_ismrm2023.html)  [Source Code](https://github.com/ad12/DOSMA/tree/master)
+[Conference Abstract](../files/7T_ismrm23.pdf)  [Source Code](https://github.com/ad12/DOSMA/tree/master)
