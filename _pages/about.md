@@ -11,7 +11,7 @@ I’m interested in developing advanced data acquisition methods and reconstruct
  
 I believe the best way to ensure I understand something is by implementing it. To help others, I have organized around 20 tutorials on basic reconstruction methods in my blog posts.
 
-Here are some examples: 
+Here are a few examples: 
 - [GRAPPA reconstruction tutorial](https://zimuhuo.github.io/posts/blog-post-1/)
 - [EPI distortion tutorial part (1/2)](https://zimuhuo.github.io/posts/blog-post-7/)
 - [Simulatenous Mulit-slice tutorial part (1/5)](https://zimuhuo.github.io/posts/blog-post-10/)
