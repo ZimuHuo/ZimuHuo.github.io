@@ -1,0 +1,614 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Partial Fourier reconstruction tutorial 2 - Zimu Huo / Personal Site</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Zimu Huo / Personal Site">
+<meta property="og:title" content="Partial Fourier reconstruction tutorial 2">
+
+
+  <link rel="canonical" href="http://localhost:4000/posts/blog-post-16/">
+  <meta property="og:url" content="http://localhost:4000/posts/blog-post-16/">
+
+
+
+  <meta property="og:description" content="Partial Fourier techniques aim to recover missing data using only half of the k-space. This reconstruction leverages the conjugate symmetry property of k-space, although it is sensitive to phase errors.Here, I present a Projection onto Convex Sets (POCS) algorithm that finds the optimal solution by considering two criteria: 1. consistency with the acquired phase, and 2. consistency with the acquired k-space data.View the Partial Fourier tutorial 2 here">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2023-04-16T00:00:00-07:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Zimu Huo",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Zimu Huo / Personal Site Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+
+<!-- Support for MatJax -->
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Zimu Huo / Personal Site</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/talks/">Talks</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/teaching/">Teaching</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/portfolio/">Portfolio</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/year-archive/">Blog Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/Presentations/">Presentations</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="http://localhost:4000/images/profile.png" class="author__avatar" alt="Zimu Huo">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Zimu Huo</h3>
+    
+    <p class="author__bio"> I’m interested in developing advanced data acquisition methods and reconstruction algorithms in magnetic resonance imaging (MRI). </p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      <!-- Font Awesome icons / Biographic information  -->
+      
+        <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>Cambridge</li>
+      
+      
+        <li class="author__desktop"><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>University of Cambridge</li>
+      
+      
+      
+        <li><a href="mailto:zh382@cam.ac.uk"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
+      
+
+      <!-- Font Awesome and Academicons icons / Academic websites -->
+            
+      
+      
+      
+      
+        <li><a href="http://orcid.org/0009-0008-3426-326X"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
+      
+                              
+      
+
+      <!-- Font Awesome icons / Repositories and software development -->
+      
+            
+            
+      
+            
+            
+
+      <!-- Font Awesome icons / Social media -->
+      
+      
+            
+      
+                  
+                  
+      
+      
+        <li><a href="https://instagram.com/zimu.huo"><i class="fab fa-fw fa-instagram icon-pad-right" aria-hidden="true"></i>Instagram</a></li>
+            
+            
+            
+      
+            
+                  
+            
+      
+            
+            
+      
+              
+      
+                      
+      
+      
+            
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Partial Fourier reconstruction tutorial 2">
+    <meta itemprop="description" content="Partial Fourier techniques aim to recover missing data using only half of the k-space. This reconstruction leverages the conjugate symmetry property of k-space, although it is sensitive to phase errors.Here, I present a Projection onto Convex Sets (POCS) algorithm that finds the optimal solution by considering two criteria: 1. consistency with the acquired phase, and 2. consistency with the acquired k-space data.View the Partial Fourier tutorial 2 here">
+    <meta itemprop="datePublished" content="April 16, 2023">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Partial Fourier reconstruction tutorial 2
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  less than 1 minute read
+	
+</p>
+          
+        
+        
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2023-04-16T00:00:00-07:00">April 16, 2023</time></p>
+            
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>Partial Fourier techniques aim to recover missing data using only half of the k-space. This reconstruction leverages the conjugate symmetry property of k-space, although it is sensitive to phase errors.</p>
+
+<p>Here, I present a Projection onto Convex Sets (POCS) algorithm that finds the optimal solution by considering two criteria: 1. consistency with the acquired phase, and 2. consistency with the acquired k-space data.</p>
+
+<p><a href="../notebooks/POCS.html">View the Partial Fourier tutorial 2 here</a></p>
+
+
+        
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/tags/#mri" class="page__taxonomy-item" rel="tag">MRI</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#partial-fourier" class="page__taxonomy-item" rel="tag">Partial Fourier</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#reconstruction" class="page__taxonomy-item" rel="tag">Reconstruction</a>
+    
+    </span>
+  </p>
+
+
+
+
+      </footer>
+
+      
+
+<section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/posts/blog-post-16/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/posts/blog-post-16/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/posts/blog-post-16/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/posts/blog-post-15/" class="pagination--pager" title="Partial Fourier reconstruction tutorial 1
+">Previous</a>
+    
+    
+      <a href="http://localhost:4000/posts/blog-post-17/" class="pagination--pager" title="Partial Fourier reconstruction tutorial 3
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/posts/blog-post-22/" rel="permalink">Burst imaging simulation
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  less than 1 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2024-09-10T00:00:00-07:00">September 10, 2024</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p>An ultrafast excitation and acquisition technique.</p>
+
+<p>This demo demonstrates how you can implement a sequence with just a few lines of code (in under 10 seconds) and visualize both the EPG and isochromat simulations with my simulation toolbox</p>
+
+<p><a href="../notebooks/burst.html">View the BURST demo here</a></p>
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/posts/blog-post-21/" rel="permalink">Simulatenous Mulit-slice reconstruction tutorial 5
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  less than 1 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2024-05-10T00:00:00-07:00">May 10, 2024</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p>The slice-leakage is an artefact where the information from one slice is unintentionally transmitted to another slice during reconstruction. Any information from slice A that appears in slice B at the end of the reconstruction is considered slice leakage. The current method involves using a Monte Carlo simulation to impose unique frequency modulations on each slice. After reconstructions, the slice leakage can be determined by quantifying the frequency modulations on each individual slice. For example, if we add a 4 Hz modulation on slice A and a 6 Hz modulation on slice B, any 6 Hz component found on slice A after the reconstruction could be used to indicate slice leakage.</p>
+
+<p><a href="../notebooks/slice_leakagedemo.html">View the SMS tutorial 5 here</a></p>
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/posts/blog-post-20/" rel="permalink">NUFFT tutorial
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  less than 1 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2024-04-10T00:00:00-07:00">April 10, 2024</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p>Challenges arise when reconstructing from non-uniform sampling patterns in the Fourier domain. Performing a direct Fourier transform in such cases incurs a quadratic computation cost of O($N^2$), rendering it impractical for standard practices at high resolutions. This requires transforming non-Cartesian samples back into a uniformly spaced Cartesian grid, enabling the utilization of more efficient FFT algorithms. Typical regridding procedures involve convolving the acquired data with a predefined gridding kernel weighted by the pre-calculated density compensation function, followed by a resampling process onto the Cartesian grid. The ideal gridding kernel is a sinc function, as its Fourier transform results in a rectangular function. However, since the optimal convolution function is of infinite extent, implementing it directly is impractical. To address this, the convolution kernel is truncated and windowed. A popular choice for this purpose is the use of Kaiser-Bessel functions. These methodologies are commonly known as “gridding” and is a special case of non-uniform Fourier transforms (NUFFT).</p>
+
+<p><a href="../notebooks/gridding.html">View the NUFFT tutorial here</a></p>
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/posts/blog-post-19/" rel="permalink">bSSFP simulation tutorial 2
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  less than 1 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2024-02-10T00:00:00-08:00">February 10, 2024</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p>Here, I present various variations of bSSFP: standard bSSFP, fluctuating equilibrium, and alternating steady states. Each variation manipulates sequence parameters such as TR, flip angles, and RF phase to generate unique profiles optimized for specific tasks.</p>
+
+<p><a href="../notebooks/ssfp_demo1.html">View the SSFP tutorial 2 here</a></p>
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2025 Zimu Huo. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+
