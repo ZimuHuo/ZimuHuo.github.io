@@ -12,4 +12,4 @@ An ultrafast excitation and acquisition technique.
 
 This demo demonstrates how you can implement a sequence with just a few lines of code (in under 10 seconds) and visualize both the EPG and isochromat simulations with my simulation toolbox
 
-[View the BURST demo here](../notebooks/burst.html)
+[View the BURST demo here](https://zimuhuo.github.io/posts/notebooks/burst.html)
