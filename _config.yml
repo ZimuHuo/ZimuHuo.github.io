@@ -25,10 +25,10 @@ author:
   name             : "Zimu Huo"
   pronouns         : # example: "she/her"  
   bio              : " I’m interested in developing advanced data acquisition methods and reconstruction algorithms in magnetic resonance imaging (MRI). "
-  location         : "Cambridge"
-  employer         : "University of Cambridge"
+  location         : "Palo Alto"
+  employer         : "Stanford Univesity"
   uri              : # URL
-  email            : "zh382@cam.ac.uk" 
+  email            : "zimuhuo@stanford.edu" 
 
   # Academic websites
   #arxiv            : # URL - Update with the correct link to your profile
@@ -303,3 +303,4 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
